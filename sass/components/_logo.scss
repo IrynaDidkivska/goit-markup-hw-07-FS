@@ -1,0 +1,26 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+.logo-web {
+  color: var(--accent-color);
+}
+.logo-studio {
+  color: var(--title-text-color);
+}
+.logo-link {
+  margin-right: 93px;
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+
+  transition: color 250ms var(--timing-function);
+}
+.logo-link:hover,
+.logo-link:focus {
+  color: var(--accent-color);
+}

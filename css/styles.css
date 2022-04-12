@@ -250,7 +250,7 @@ a {
   background-repeat: no-repeat;
 }
 
-.hero-title {
+.hero__title {
   width: 696px;
   display: flex;
   margin-left: auto;
@@ -572,8 +572,8 @@ a {
 }
 
 .team-content {
-  padding-top: var(--list-set);
-  padding-bottom: var(--list-set);
+  margin-top: var(--list-set);
+  margin-bottom: var(--list-set);
 }
 
 .team-item {
@@ -946,11 +946,6 @@ a {
   margin-right: 70px;
 }
 
-.footer-container {
-  display: flex;
-  align-items: center;
-}
-
 .footer-icon {
   display: flex;
 }
@@ -1000,8 +995,6 @@ a {
 }
 .subscribe-button {
   display: inline-flex;
-  ai
-
   margin-left: 12px;
   padding-top: 10px;
   padding-bottom: 10px;

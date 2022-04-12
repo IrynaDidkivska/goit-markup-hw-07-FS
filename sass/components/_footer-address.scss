@@ -1,0 +1,19 @@
+.div-address {
+  margin-right: 70px;
+}
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address {
+  font-style: normal;
+}
+.auth-address {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms var(--timing-function);
+}
+
+.auth-address:hover,
+.auth-address:focus {
+  color: var(--accent-color);
+}

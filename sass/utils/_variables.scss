@@ -1,0 +1,50 @@
+//project colors
+$color-palette: (
+  'primary-text': rgb(33, 33, 33),
+  'title-text-color': rgb(255, 255, 255),
+  'secondary-text-color': rgb(117, 117, 117),
+  'accent-color': rgb(33, 150, 243),
+  'btn-bgc-hover-focus': rgb(24, 140, 232),
+  'hero-footer-bg-color': rgb(47, 48, 58),
+  'bgc-secondary': rgb(245, 244, 250),
+  'clients-logo-color': rgb(175, 177, 184),
+);
+//project opacity colors
+$color-opacity: (
+  'light': rgba(255, 255, 255, 0.6),
+  'midle': rgba(255, 255, 255, 0.3),
+  'dark': rgba(255, 255, 255, 0.1),
+);
+
+//project geometry
+$margin-list-set: 30px;
+$margin-fifty: 50px;
+$padding-site-nav: 32px;
+$padding-text: 24px;
+
+//project animation
+$timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//typography
+$subtitle-font-size: 16px;
+
+//template
+//flex
+%flex-element-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+//font
+%main-font-styles {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+//list
+%list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
