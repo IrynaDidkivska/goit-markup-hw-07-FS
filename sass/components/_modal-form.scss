@@ -1,144 +1,142 @@
-.modal-form {
+.form {
   display: flex;
   flex-direction: column;
   padding: 40px;
 }
-.modal-title {
+.form__title {
   margin-bottom: 12px;
-
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
 }
-.form-field {
+
+.form__label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: $form-label-text;
+}
+
+.form__field {
   position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
-.modal-input-icon {
-  position: absolute;
-  top: 50%;
-  left: 15px;
 
-  display: inline-block;
-
-  transform: translateY(-50%);
-  fill: currentColor;
-
-  transition: fill 250ms var(--timing-function);
-}
-.modal-input:focus ~ .modal-input-icon {
-  fill: var(--accent-color);
-}
-
-.modal-label {
-  margin-bottom: 4px;
-
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-
-  color: var(--secondary-text-color);
-}
-.modal-input,
-.modal-textarea {
-  width: 448px;
-  height: 40px;
+.form__input,
+.form__textarea {
   padding-top: 11px;
   padding-bottom: 11px;
   padding-left: 42px;
+  width: 448px;
+  height: 40px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline: transparent;
   border-radius: 4px;
 
-  transition: border-color 250ms var(--timing-function);
+  transition: border-color $timing-function;
+
+  &:hover,
+  &:focus {
+    border-color: $backdrop-icon-hover;
+  }
 }
-.modal-textarea {
-  resize: none;
-  height: 120px;
+.form__icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  display: inline-block;
+
+  transform: translateY(-50%);
+  fill: currentColor;
+  transition: fill $timing-function;
+
+  &:focus,
+  &:hover {
+    fill: $form-input-hover;
+  }
+}
+.form__input:focus ~ .form__icon {
+  fill: $form-input-hover;
+}
+
+.form__textarea {
   margin-bottom: 0px;
   padding: 12px 16px;
-}
-.modal-textarea::placeholder {
-  top: 12px;
-  left: 16px;
+  resize: none;
+  height: 120px;
 
-  line-height: 1.14;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-.modal-input:hover,
-.modal-input:focus,
-.modal-textarea:hover,
-.modal-textarea:focus {
-  border-color: var(--accent-color);
-}
+  &::placeholder {
+    top: 12px;
+    left: 16px;
 
-.checkbox {
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+.consent {
+  @include flex-center();
+
+  margin-top: 20px;
+  margin-bottom: $margin-list-set;
+}
+.consent__checkbox {
   position: absolute;
 
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
+  border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
-.consent {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-.modal-text {
+.consent__text {
   margin-left: 7px;
-
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: left;
 
-  color: var(--secondary-text-color);
+  color: $form-label-text;
 }
-.modal-link {
+.consent__link {
   text-decoration: underline;
 
-  color: var(--accent-color);
+  color: $form-input-hover;
 }
-.checkbox-icon {
+.consent__icon {
+  display: inline-block;
   top: 0;
   left: 0;
-  display: inline-block;
 
-  border: 2px solid var(--primary-text-color);
-  border-radius: 4px;
+  border: 2px solid $form-title-text;
   fill: currentColor;
 }
-.checkbox:checked + .checkbox-icon {
-  border-color: var(--accent-color);
-  fill: currentColor;
-  background-color: var(--accent-color);
+.consent__checkbox:checked + .consent__icon {
+  border-color: $checkbox-bgc;
+  background-color: $checkbox-bgc;
   background-size: contain;
   background-origin: border-box;
+  fill: currentColor;
 
-  transition: border-color 250ms var(--timing-function),
-    background-color 250ms var(--timing-function);
+  transition: border-color $timing-function, background-color $timing-function;
 }
 
-.modal-submit-btn {
+.form__button {
   display: block;
   margin: auto;
   padding: 10px 0px;
+  transition: $transition-color-bgc;
 
-  transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
-}
-.modal-submit-btn:hover,
-.modal-submit-btn:focus {
-  background-color: var(--btn-hover-focus);
+  &:hover,
+  &:focus {
+    background-color: $form-btn-hover;
+  }
 }

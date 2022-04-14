@@ -1,50 +1,102 @@
 //project colors
-$color-palette: (
-  'primary-text': rgb(33, 33, 33),
-  'title-text-color': rgb(255, 255, 255),
-  'secondary-text-color': rgb(117, 117, 117),
-  'accent-color': rgb(33, 150, 243),
-  'btn-bgc-hover-focus': rgb(24, 140, 232),
-  'hero-footer-bg-color': rgb(47, 48, 58),
-  'bgc-secondary': rgb(245, 244, 250),
-  'clients-logo-color': rgb(175, 177, 184),
-);
+$primary-text: #212121;
+$title-text: #ffffff;
+$secondary-text: #757575;
+$accent-color: #2196f3;
+$btn-bgc-hover-focus: #188ce8;
+$hero-bgc: #2f303a;
+$bgc-secondary: #f5f4fa;
+$clients-logo-color: #afb1b8;
+
+//text colors
+$primary-text: #212121;
+$title-text: #ffffff;
+$subtitle-text: #757575;
+
+//link colors
+$link-main: #212121;
+$link-accent: #2196f3;
+$auth-link: #757575;
+$link-logo: #ffffff;
+
+//btn colors
+$btn-text: #ffffff;
+$btn-main-bgc: #2196f3;
+$btn-bgc-hover-focus: #188ce8;
+
+//icon colors
+$social-icon: #afb1b8;
+$social-icon-text: #ffffff;
+$social-icon-bgc: #2196f3;
+$social-icon-bgc-footer: rgba(255, 255, 255, 0.1);
+
+//modal
+$form-bgc: #ffffff;
+$form-title-text: #212121;
+$form-label-text: #757575;
+$form-input-hover: #2196f3;
+$form-btn-hover: #2196f3;
+$backdrop-icon-hover: #2196f3;
+
+//checkbox
+$checkbox-bgc: #2196f3;
+
 //project opacity colors
-$color-opacity: (
-  'light': rgba(255, 255, 255, 0.6),
-  'midle': rgba(255, 255, 255, 0.3),
-  'dark': rgba(255, 255, 255, 0.1),
-);
+$color-opacity-light: rgba(255, 255, 255, 0.6);
+$color-opacity-midle: rgba(255, 255, 255, 0.3);
+$color-opacity-dark: rgba(255, 255, 255, 0.1);
 
 //project geometry
 $margin-list-set: 30px;
 $margin-fifty: 50px;
-$padding-site-nav: 32px;
+$padding-set-nav: 32px;
 $padding-text: 24px;
-
-//project animation
-$timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$margin-auto: auto;
 
 //typography
+$main-font-family: Roboto, sans-serif;
 $subtitle-font-size: 16px;
+$main-letter-spacing: 0.03em;
 
-//template
-//flex
-%flex-element-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 //font
+
 %main-font-styles {
-  font-family: Roboto, sans-serif;
+  font-family: $main-font-family;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: $main-letter-spacing;
+
+  color: $primary-text;
+}
+
+%headlines {
+  justify-content: center;
+  margin-bottom: $margin-fifty;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
   letter-spacing: 0.03em;
 }
-//list
-%list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+%gallery-headline {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+%footer-title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $title-text;
 }

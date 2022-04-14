@@ -1,13 +1,6 @@
-.page-header {
-  border-bottom: 1px solid #ececec;
-}
-.logo-web {
-  color: var(--accent-color);
-}
-.logo-studio {
-  color: var(--title-text-color);
-}
 .logo-link {
+  display: block;
+
   margin-right: 93px;
 
   font-family: Raleway, sans-serif;
@@ -16,11 +9,22 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
 
-  color: var(--primary-text-color);
+  color: $link-main;
 
-  transition: color 250ms var(--timing-function);
+  transition: $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $link-accent;
+  }
 }
-.logo-link:hover,
-.logo-link:focus {
-  color: var(--accent-color);
+.logo-link__web {
+  color: $link-accent;
+}
+
+.logo-studio {
+  color: $link-logo;
+}
+.logo-link__footer {
+  margin-bottom: 20px;
 }

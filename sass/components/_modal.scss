@@ -1,3 +1,5 @@
+@import "../components/modal-form";
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -8,7 +10,7 @@
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
-  transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
+  transition: opacity $timing-function, visibility $timing-function;
 }
 
 .backdrop.is-hidden {
@@ -16,53 +18,54 @@
   pointer-events: none;
   visibility: hidden;
 }
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.7);
-}
 
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-
   min-width: 528px;
 
-  background-color: var(--title-text-color);
+  background-color: $form-bgc;
   border-radius: 4px;
 
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms var(--timing-function), opacity 250ms var(--timing-function);
-}
+  transition: transform $timing-function, opacity $timing-function;
 
-.backdrop-button {
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+}
+.modal__button {
   position: absolute;
   top: 8px;
   right: 8px;
-
+  padding: 0;
+}
+.modal__button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 0;
   width: 30px;
   height: 30px;
 
+  background-color: $form-bgc;
   border: 0;
-  padding: 0;
-
-  background-color: var(--title-text-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
   cursor: pointer;
 }
-.backdrop-icon {
+.modal__icon {
   position: absolute;
   left: 50%;
   top: 50%;
+
+  @include flex-center();
+  color: $backdrop-icon-hover;
   transform: translate(-50%, -50%);
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  color: var(--accent-color);
-}
-.backdrop-icon:hover {
-  fill: currentColor;
+  &:hover {
+    fill: currentColor;
+  }
 }

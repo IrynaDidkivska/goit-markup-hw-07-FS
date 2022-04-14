@@ -1,8 +1,9 @@
-.button-list {
-  display: flex;
-  justify-content: center;
-  margin-bottom: var(--margin-fifty);
+@import "../components/button";
+
+.button__list {
+  @include flex-center();
+  margin-bottom: $margin-list-set;
 }
-.button-item:not(:last-child) {
+.button__item:not(:last-child) {
   margin-right: 8px;
 }

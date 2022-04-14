@@ -1,7 +1,6 @@
 .header {
-  display: flex;
-  align-items: center;
+  border-bottom: 1px solid #ececec;
 }
-.page.header {
-  color: var(--title-text-color);
+.header__container {
+  @include flex-center();
 }
