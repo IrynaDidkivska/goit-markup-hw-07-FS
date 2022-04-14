@@ -15,11 +15,6 @@
   border-radius: 4px;
   color: $color-opacity-light;
   background-color: $hero-bgc;
-
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
 }
 .subscribe__button {
   display: inline-flex;
