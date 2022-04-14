@@ -196,8 +196,12 @@ ul {
   color: #2196f3;
 }
 
-.logo-studio {
+.logo-link__studio {
   color: #ffffff;
+}
+
+.logo-link__studio:hover, .logo-link__studio:focus {
+  color: #2196f3;
 }
 
 .logo-link__footer {
@@ -991,8 +995,12 @@ ul {
   color: #2196f3;
 }
 
-.logo-studio {
+.logo-link__studio {
   color: #ffffff;
+}
+
+.logo-link__studio:hover, .logo-link__studio:focus {
+  color: #2196f3;
 }
 
 .logo-link__footer {
@@ -1173,8 +1181,8 @@ ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: calc(-1 * $margin-list-set);
-  margin-right: calc(-1 * $margin-list-set);
+  margin-bottom: calc(-1 * 30px);
+  margin-right: calc(-1 * 30px);
 }
 
 .portfolio__item {

@@ -4,8 +4,8 @@
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: calc(-1 * $margin-list-set);
-  margin-right: calc(-1 * $margin-list-set);
+  margin-bottom: calc(-1 * 30px);
+  margin-right: calc(-1 * 30px);
 }
 .portfolio__item {
   margin-bottom: $margin-list-set;

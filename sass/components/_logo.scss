@@ -22,8 +22,12 @@
   color: $link-accent;
 }
 
-.logo-studio {
+.logo-link__studio {
   color: $link-logo;
+  &:hover,
+  &:focus {
+    color: $link-accent;
+  }
 }
 .logo-link__footer {
   margin-bottom: 20px;
