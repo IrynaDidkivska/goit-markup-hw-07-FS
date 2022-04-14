@@ -970,6 +970,35 @@ ul {
   fill: currentColor;
 }
 
+.logo-link {
+  display: block;
+  margin-right: 93px;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #212121;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo-link:hover, .logo-link:focus {
+  color: #2196f3;
+}
+
+.logo-link__web {
+  color: #2196f3;
+}
+
+.logo-studio {
+  color: #ffffff;
+}
+
+.logo-link__footer {
+  margin-bottom: 20px;
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
