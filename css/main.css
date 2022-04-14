@@ -1231,18 +1231,18 @@ ul {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: #757575;
 }
 
-.portfolio-link:hover .portfolio-overlay,
-.portfolio-link:focus .portfolio-overlay {
+.portfolio__link:hover .portfolio__overlay,
+.portfolio__link:focus .portfolio__overlay {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-.portfolio-link:hover .thumb-text,
-.portfolio-link:focus .thumb-text {
+.portfolio__link:hover .overlay__text,
+.portfolio__link:focus .overlay__text {
   opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */
