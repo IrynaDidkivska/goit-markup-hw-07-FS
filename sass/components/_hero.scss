@@ -1,16 +1,14 @@
 .hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: $margin-auto;
+  margin-right: $margin-auto;
   padding: 200px 0;
 
   text-align: center;
 
   color: $title-text;
   background-color: $hero-bgc;
-}
-.hero--overlay {
-  max-width: 1600px;
-  height: 600px;
-  margin-left: $margin-auto;
-  margin-right: $margin-auto;
 
   background-image: linear-gradient(
       to right,

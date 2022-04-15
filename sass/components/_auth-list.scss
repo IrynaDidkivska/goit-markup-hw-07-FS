@@ -1,5 +1,5 @@
 .auth-nav {
-  @include flex-center();
+  @extend %flex-center;
   margin-left: $margin-auto;
 }
 
@@ -7,7 +7,7 @@
   margin-right: $margin-fifty;
 }
 .auth-nav__link {
-  @include flex-center();
+  @extend %flex-center;
 
   padding-top: $padding-set-nav;
   padding-bottom: $padding-set-nav;

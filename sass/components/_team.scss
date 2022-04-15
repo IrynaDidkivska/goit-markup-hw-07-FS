@@ -1,11 +1,12 @@
-@import "../components/team-list";
-.team {
+@import "../components/social";
+
+.section--other-bgc {
   background-color: $bgc-secondary;
 }
-.team__headline {
+.section__title {
   @extend %headlines;
 }
-.team__list {
+.team {
   display: flex;
 }
 .team__item {
@@ -18,4 +19,19 @@
 .team__item + .team__item {
   margin-left: $margin-list-set;
   text-align: center;
+}
+.team__thumb {
+  margin-top: $margin-list-set;
+  margin-bottom: $margin-list-set;
+}
+.team__title {
+  @extend %gallery-headline;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+}
+.team__text {
+  margin-bottom: 16px;
+  @extend %gallery-headline;
+  color: $subtitle-text;
 }

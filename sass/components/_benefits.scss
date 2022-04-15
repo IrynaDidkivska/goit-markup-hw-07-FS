@@ -7,7 +7,7 @@
 }
 
 .benefits__wrapper {
-  @include flex-center();
+  @extend %flex-center;
   height: 120px;
   margin-bottom: $margin-list-set;
 
