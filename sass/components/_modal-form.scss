@@ -128,15 +128,3 @@
 
   transition: border-color $timing-function, background-color $timing-function;
 }
-
-.form__button {
-  display: block;
-  margin: auto;
-  padding: 10px 0px;
-  transition: $transition-color-bgc;
-
-  &:hover,
-  &:focus {
-    background-color: $form-btn-hover;
-  }
-}

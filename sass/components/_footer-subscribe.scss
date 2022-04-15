@@ -16,19 +16,6 @@
   color: $color-opacity-light;
   background-color: $hero-bgc;
 }
-.subscribe__button {
-  display: inline-flex;
-  margin-left: 12px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 29px;
-  text-align: left;
-
-  &:hover,
-  &:focus {
-    background-color: #188ce8;
-  }
-}
 
 .subscribe__icon {
   display: block;

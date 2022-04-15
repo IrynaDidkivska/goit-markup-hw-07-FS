@@ -1,5 +1,4 @@
 @import "../components/button";
-
 .button__list {
   @include flex-center();
   margin-bottom: $margin-list-set;
